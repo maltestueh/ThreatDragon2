@@ -2912,7 +2912,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Erhöhung von Rechten",
-                  "description": "Das Login-System ist das primäre Einfallstor von außen. Eine Schwachstelle im Code der Webanwendung oder der API ermöglicht es einem Angreifer, Befehle auf dem Betriebssystemebene auszuführen",
+                  "description": "Das Login-System ist das primäre Einfallstor von außen. Eine Schwachstelle im Code der Webanwendung oder der API ermöglicht es einem Angreifer, Befehle auf dem Betriebssystemebene auszuführen\n\nCAPEC-253: Remote Code Execution\n\nT1190: Exploit Public-Facing Application – Ausnutzen einer Schwachstelle in einem internetseitig erreichbaren Dienst als Einstiegsvektor",
                   "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2926,7 +2926,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -3054,7 +3054,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Nichtanerkennung",
-                  "description": "Ein Benutzer oder Angreifer behauptet, eine bestimmte OTT-Anfrage stamme nicht von ihm. Ohne ausreichende Protokollierung kann Allsecure dies nicht nachweisen.",
+                  "description": "Ein Benutzer oder Angreifer behauptet, eine bestimmte OTT-Anfrage stamme nicht von ihm. Ohne ausreichende Protokollierung kann Allsecure dies nicht nachweisen.\n\nCAPEC-93: Log Injection-Tampering-Forging\nTA0004 – Privilege Escalation -- Abstreiten oft mit Eskalation von Log-Rechten verbunden",
                   "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
                   "modelType": "STRIDE",
                   "new": false,
@@ -3065,7 +3065,7 @@
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -3258,7 +3258,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Veröffentlichung von Informationen",
-                  "description": "Der OTT könnte bei unzureichend gesicherter Transportverschlüsselung abgefangen werden, z. B. durch Man-in-the-Middle-Attacken.",
+                  "description": "Der OTT könnte bei unzureichend gesicherter Transportverschlüsselung abgefangen werden, z. B. durch Man-in-the-Middle-Attacken.\n\nCAPEC-94: Adversary in the Middle\n\nTA0006 - Credential Acess -- Man-in-the-Middle, Durchgriff auf Sitzungstokens",
                   "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
                   "modelType": "STRIDE",
                   "new": false,
@@ -3268,7 +3268,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
@@ -3286,6 +3286,10 @@
             },
             "vertices": [
               {
+                "x": 750,
+                "y": 270
+              },
+              {
                 "x": 770,
                 "y": 280
               },
@@ -3295,6 +3299,10 @@
               },
               {
                 "x": 810,
+                "y": 280
+              },
+              {
+                "x": 860,
                 "y": 280
               }
             ]
@@ -3914,11 +3922,11 @@
               "threats": [
                 {
                   "id": "b2beeb18-b6fe-41d2-9eb1-cf2b9e10667c",
-                  "title": "Neue STRIDE Bedrohung",
+                  "title": "Überlasten durch AUth-Anfragne",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Denial of service",
-                  "description": "Ein Angreifer überlastet den OTT-Service mit massenhaften Auth-Anfragen, wodurch keine gültigen OTTs generiert oder versendet werden können.",
+                  "description": "Ein Angreifer überlastet den OTT-Service mit massenhaften Auth-Anfragen, wodurch keine gültigen OTTs generiert oder versendet werden können.\n\nCAPEC-125: Flooding\n\nT1498 - Network Denial of Service",
                   "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
                   "modelType": "STRIDE",
                   "new": false,
@@ -3931,7 +3939,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1,
+                "denialOfService": 3,
                 "elevationOfPrivilege": 0
               }
             }
@@ -4060,7 +4068,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "Ein Angreifer, der Zugriff auf das interne Netzwerk erlangt hat, könnte IP-Adressen oder Identitätsmerkmale des \"2-Faktor-Authentifizierungsdienstes\" fälschen, um gefälschte Log-Daten an das \"SIEM-System\" zu senden",
+                  "description": "Ein Angreifer, der Zugriff auf das interne Netzwerk erlangt hat, könnte IP-Adressen oder Identitätsmerkmale des \"2-Faktor-Authentifizierungsdienstes\" fälschen, um gefälschte Log-Daten an das \"SIEM-System\" zu senden\n\nCAPEC-93 -- Log-injection-tampering\n\nT1036 - Masquerading --Der Angreifer maskiert seine bösartigen Daten als legitimen Datenverkehr einer vertrauenswürdigen Quelle.",
                   "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
                   "modelType": "STRIDE",
                   "new": false,
@@ -4069,7 +4077,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -4208,7 +4216,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Manipulation",
-                  "description": "Ein Angreifer mit administrativen Rechten oder durch eine SQL-Injection-Lücke im SIEM-System verändert oder löscht Einträge in der \"SIEM DB\"",
+                  "description": "Ein Angreifer mit administrativen Rechten oder durch eine SQL-Injection-Lücke im SIEM-System verändert oder löscht Einträge in der \"SIEM DB\"\n\nCAPEC-66 SQL Injection - Mangelnde Eingabevalidierung\n\nT1070 Indicator Removal -- Löschen von Logs oder Artefakten, um Aktivitäten zu verschleiern (Defense Evasion).",
                   "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
                   "modelType": "STRIDE",
                   "new": false,
@@ -4217,7 +4225,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
