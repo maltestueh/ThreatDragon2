@@ -3050,7 +3050,7 @@
                   "id": "82c16634-e518-4ef0-908e-80195213fe46",
                   "title": "Nicht ausreichende Protokollierung",
                   "status": "Open",
-                  "severity": "Critical",
+                  "severity": "Medium",
                   "type": "Nichtanerkennung",
                   "description": "Ein Benutzer oder Angreifer behauptet, eine bestimmte OTT-Anfrage stamme nicht von ihm. Ohne ausreichende Protokollierung kann Allsecure dies nicht nachweisen.\n\nCAPEC-93: Log Injection-Tampering-Forging\nTA0004 – Privilege Escalation -- Abstreiten oft mit Eskalation von Log-Rechten verbunden\n\nDREA-Score: D: 5 / R: 10 / E: 10 / A: 10=35",
                   "mitigation": "Gegenmaßnahme: Security Logging\nUmsetzung: Eigene Log-DB für Process\nOWASP ASVS V7.1.1 (Log Content)\n5 + 2 + 2 + 10",
@@ -3063,7 +3063,7 @@
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
-                "repudiation": 10,
+                "repudiation": 11,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -3288,7 +3288,7 @@
                 "y": 270
               },
               {
-                "x": 770,
+                "x": 830,
                 "y": 270
               }
             ]
