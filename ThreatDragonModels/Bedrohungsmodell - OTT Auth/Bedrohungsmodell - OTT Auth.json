@@ -2662,10 +2662,19 @@
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "id": 0,
         "diagramType": "STRIDE"
+      },
+      {
+        "id": 10,
+        "title": "Datenflussdiagramm",
+        "diagramType": "STRIDE",
+        "placeholder": "Neue STRIDE Diagramm Beschreibung",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.5.0",
+        "cells": []
       }
     ],
     "reviewer": "Georg Neugebauer",
-    "diagramTop": 10,
+    "diagramTop": 11,
     "threatTop": 102
   },
   "version": "2.5.0"
