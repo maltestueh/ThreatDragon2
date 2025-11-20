@@ -2692,6 +2692,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -2775,7 +2776,6 @@
               ]
             },
             "id": "c85b0716-52c5-469d-b93c-5b02d38f8778",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -2802,13 +2802,14 @@
                 "text": "Login System\nWebapp +\nMobile App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -2892,7 +2893,6 @@
               ]
             },
             "id": "6cd2e2db-6ed5-4b74-85cc-3ebccde87b05",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Login System\nWebapp +\nMobile App",
@@ -2900,12 +2900,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "92a620c3-306b-4de7-b311-470a15bbafdb",
+                  "title": "Login Schwachstelle",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Erhöhung von Rechten",
+                  "description": "Das Login-System ist das primäre Einfallstor von außen. Eine Schwachstelle im Code der Webanwendung oder der API ermöglicht es einem Angreifer, Befehle auf dem Betriebssystemebene auszuführen",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 108,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -2922,13 +2944,14 @@
                 "text": "2-Faktor-Aut\nhentifizierungs\ndienst"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -3012,7 +3035,6 @@
               ]
             },
             "id": "16b1b8b2-ada3-42b2-aff1-217433f7f008",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "2-Faktor-Aut\nhentifizierungs\ndienst",
@@ -3020,12 +3042,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "82c16634-e518-4ef0-908e-80195213fe46",
+                  "title": "Nicht ausreichende Protokollierung",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Nichtanerkennung",
+                  "description": "Ein Benutzer oder Angreifer behauptet, eine bestimmte OTT-Anfrage stamme nicht von ihm. Ohne ausreichende Protokollierung kann Allsecure dies nicht nachweisen.",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 105,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -3180,7 +3224,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -3201,12 +3246,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "12e16001-5aca-495d-8c10-948726c5fb1d",
+                  "title": "Man-in-the-Middle",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Veröffentlichung von Informationen",
+                  "description": "Der OTT könnte bei unzureichend gesicherter Transportverschlüsselung abgefangen werden, z. B. durch Man-in-the-Middle-Attacken.",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 106,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "2. Weiterleitung\nTelefonnummer + OTT"
@@ -3222,12 +3286,16 @@
             },
             "vertices": [
               {
-                "x": 700,
-                "y": 220
+                "x": 770,
+                "y": 280
               },
               {
-                "x": 830,
-                "y": 220
+                "x": 780,
+                "y": 270
+              },
+              {
+                "x": 810,
+                "y": 280
               }
             ]
           },
@@ -3527,6 +3595,82 @@
             "vertices": []
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "d88ee570-c089-4316-853b-c50de9da31da",
+            "source": {
+              "x": 810,
+              "y": 10
+            },
+            "target": {
+              "x": 1030,
+              "y": 390
+            },
+            "vertices": [
+              {
+                "x": 1130,
+                "y": 10
+              },
+              {
+                "x": 1180,
+                "y": 120
+              },
+              {
+                "x": 1180,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "5443cf16-12ed-4786-a36b-43d3ce0d2656",
+            "source": {
+              "x": 800,
+              "y": 10
+            },
+            "target": {
+              "x": 1030,
+              "y": 390
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 90
+              },
+              {
+                "x": 360,
+                "y": 360
+              }
+            ]
+          },
+          {
             "position": {
               "x": 530,
               "y": 30
@@ -3550,6 +3694,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -3633,7 +3778,6 @@
               ]
             },
             "id": "64d6ee98-8f28-4f3d-832a-bd2fc2e0b5d8",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Log DB",
@@ -3652,8 +3796,8 @@
           },
           {
             "position": {
-              "x": 968,
-              "y": 200
+              "x": 900,
+              "y": 220
             },
             "size": {
               "width": 130,
@@ -3664,13 +3808,14 @@
                 "text": "Allsecure Mobile\nPhone OTT\nService"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -3754,7 +3899,6 @@
               ]
             },
             "id": "f6d74024-bafd-49e1-a824-a3c50f55c0c7",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Allsecure Mobile\nPhone OTT\nService",
@@ -3762,12 +3906,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "b2beeb18-b6fe-41d2-9eb1-cf2b9e10667c",
+                  "title": "Neue STRIDE Bedrohung",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Ein Angreifer überlastet den OTT-Service mit massenhaften Auth-Anfragen, wodurch keine gültigen OTTs generiert oder versendet werden können.",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 107,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -3784,13 +3950,14 @@
                 "text": "SIEM-System"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -3874,7 +4041,6 @@
               ]
             },
             "id": "7b367e7d-ee75-4f22-a93d-6ca6ca8bd8b4",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "SIEM-System",
@@ -3882,12 +4048,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ac9ccd60-3cdc-4441-8dfc-dde7f435b347",
+                  "title": "Spoofing um gefälschte Daten zu schicken",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Ein Angreifer, der Zugriff auf das interne Netzwerk erlangt hat, könnte IP-Adressen oder Identitätsmerkmale des \"2-Faktor-Authentifizierungsdienstes\" fälschen, um gefälschte Log-Daten an das \"SIEM-System\" zu senden",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 103,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -3904,16 +4092,19 @@
                 "text": "SIEM DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -3997,7 +4188,6 @@
               ]
             },
             "id": "6096a7b9-d5c8-4050-bd79-81d798509ef9",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "SIEM DB",
@@ -4005,13 +4195,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": true,
               "isEncrypted": true,
               "isSigned": true,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "747980c5-01d7-43f7-87ae-a1a216aefa9b",
+                  "title": "Einträge manipulieren",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Manipulation",
+                  "description": "Ein Angreifer mit administrativen Rechten oder durch eine SQL-Injection-Lücke im SIEM-System verändert oder löscht Einträge in der \"SIEM DB\"",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 104,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -4035,6 +4245,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -4118,7 +4329,6 @@
               ]
             },
             "id": "2eccba86-7f3a-4fe9-a9ab-1a1acc476798",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "Management",
@@ -4136,7 +4346,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 13,
-    "threatTop": 102
+    "threatTop": 108
   },
   "version": "2.5.0"
 }
