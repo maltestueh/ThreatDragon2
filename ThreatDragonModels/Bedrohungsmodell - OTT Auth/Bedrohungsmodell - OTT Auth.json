@@ -2910,8 +2910,8 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Erhöhung von Rechten",
-                  "description": "Das Login-System ist das primäre Einfallstor von außen. Eine Schwachstelle im Code der Webanwendung oder der API ermöglicht es einem Angreifer, Befehle auf dem Betriebssystemebene auszuführen\n\nCAPEC-253: Remote Code Execution\n\nT1190: Exploit Public-Facing Application – Ausnutzen einer Schwachstelle in einem internetseitig erreichbaren Dienst als Einstiegsvektor\n\nDREA-Score: 32",
-                  "mitigation": "Ggmaßnahme: Strikte Eingabevalidierung und sichere Deserialisierung\nUmsetzung: -- Einsatz einer \"Allowlist\"-Validierung für alle API-Endpunkte (nur erwartete Zeichen/Formate zulassen)\n-- SAST (Static Application Security Testing) in der CI/CD-Pipeline\n\nOWASP ASVS V1.2 Injection Prevention",
+                  "description": "Das Login-System ist das primäre Einfallstor von außen. Eine Schwachstelle im Code der Webanwendung oder der API ermöglicht es einem Angreifer, Befehle auf dem Betriebssystemebene auszuführen\n\nCAPEC-253: Remote Code Execution\n\nT1190: Exploit Public-Facing Application – Ausnutzen einer Schwachstelle in einem internetseitig erreichbaren Dienst als Einstiegsvektor\n\nDREA-Score: D: 10 / R: 6 / E: 6 / A: 10= 32",
+                  "mitigation": "Ggmaßnahme: Strikte Eingabevalidierung und sichere Deserialisierung\nUmsetzung: -- Einsatz einer \"Allowlist\"-Validierung für alle API-Endpunkte (nur erwartete Zeichen/Formate zulassen)\n-- SAST (Static Application Security Testing) in der CI/CD-Pipeline\n\nOWASP ASVS V1.2 Injection Prevention\n\n10 + 2 + 2 + 10",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 108,
@@ -2924,7 +2924,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 7
+                "elevationOfPrivilege": 9
               }
             }
           },
@@ -3052,8 +3052,8 @@
                   "status": "Open",
                   "severity": "Critical",
                   "type": "Nichtanerkennung",
-                  "description": "Ein Benutzer oder Angreifer behauptet, eine bestimmte OTT-Anfrage stamme nicht von ihm. Ohne ausreichende Protokollierung kann Allsecure dies nicht nachweisen.\n\nCAPEC-93: Log Injection-Tampering-Forging\nTA0004 – Privilege Escalation -- Abstreiten oft mit Eskalation von Log-Rechten verbunden\n\nDREA-Score: 35",
-                  "mitigation": "Gegenmaßnahme: Security Logging\nUmsetzung: Eigene Log-DB für Process\nOWASP ASVS V7.1.1 (Log Content)",
+                  "description": "Ein Benutzer oder Angreifer behauptet, eine bestimmte OTT-Anfrage stamme nicht von ihm. Ohne ausreichende Protokollierung kann Allsecure dies nicht nachweisen.\n\nCAPEC-93: Log Injection-Tampering-Forging\nTA0004 – Privilege Escalation -- Abstreiten oft mit Eskalation von Log-Rechten verbunden\n\nDREA-Score: D: 5 / R: 10 / E: 10 / A: 10=35",
+                  "mitigation": "Gegenmaßnahme: Security Logging\nUmsetzung: Eigene Log-DB für Process\nOWASP ASVS V7.1.1 (Log Content)\n5 + 2 + 2 + 10",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 105,
@@ -3063,7 +3063,7 @@
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
-                "repudiation": 8,
+                "repudiation": 10,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -3256,8 +3256,8 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Veröffentlichung von Informationen",
-                  "description": "Der OTT könnte bei unzureichend gesicherter Transportverschlüsselung abgefangen werden, z. B. durch Man-in-the-Middle-Attacken.\n\nCAPEC-94: Adversary in the Middle\n\nTA0006 - Credential Acess -- Man-in-the-Middle, Durchgriff auf Sitzungstokens\n\nDREA-Score: 22",
-                  "mitigation": "Gegenmaßnahme: SSL/TLS Certificate\nUmsetzung: Hinterlegen der Server-Zertifikats im Code der Mobile App, Implementierung einer strikten HTTPS-Konfiguration auf dem Server.",
+                  "description": "Der OTT könnte bei unzureichend gesicherter Transportverschlüsselung abgefangen werden, z. B. durch Man-in-the-Middle-Attacken.\n\nCAPEC-94: Adversary in the Middle\n\nTA0006 - Credential Acess -- Man-in-the-Middle, Durchgriff auf Sitzungstokens\n\nDREA-Score: D: 9 / R: 4 / E: 4 / A: 5=22",
+                  "mitigation": "Gegenmaßnahme: SSL/TLS Certificate\nUmsetzung: Hinterlegen der Server-Zertifikats im Code der Mobile App, Implementierung einer strikten HTTPS-Konfiguration auf dem Server.\nOWASP MASVS-NETWORK-2\n9 + 1 + 1 + 1 = 12",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 106,
@@ -3266,7 +3266,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 9,
+                "informationDisclosure": 11,
                 "denialOfService": 0
               }
             },
@@ -3912,8 +3912,8 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Denial of service",
-                  "description": "Ein Angreifer überlastet den OTT-Service mit massenhaften Auth-Anfragen, wodurch keine gültigen OTTs generiert oder versendet werden können.\n\nCAPEC-125: Flooding\n\nT1498 - Network Denial of Service\n\nDREA-Score: 37",
-                  "mitigation": "Gegenmaßnahme: Rate Limiting und Traffic Throttling\nUmsetzung: Load Balancer, Einsatz von CAPTCHAs nach fehlgeschlagenen Versuchen, automatische temporäre Sperrung von IPs bei Überschreitung der Limits\nD3FEND D3-RL (Rate Limiting)",
+                  "description": "Ein Angreifer überlastet den OTT-Service mit massenhaften Auth-Anfragen, wodurch keine gültigen OTTs generiert oder versendet werden können.\n\nCAPEC-125: Flooding\n\nT1498 - Network Denial of Service\n\nDREA-Score: D: 8 / R: 10 / E: 9 / A: 10=37",
+                  "mitigation": "Gegenmaßnahme: Rate Limiting und Traffic Throttling\nUmsetzung: Load Balancer, Einsatz von CAPTCHAs nach fehlgeschlagenen Versuchen, automatische temporäre Sperrung von IPs bei Überschreitung der Limits\nD3FEND D3-RL (Rate Limiting)\n4 + 2 + 3 + 2",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 107,
@@ -3925,7 +3925,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 6,
+                "denialOfService": 8,
                 "elevationOfPrivilege": 0
               }
             }
@@ -4054,8 +4054,8 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Spoofing",
-                  "description": "Ein Angreifer, der Zugriff auf das interne Netzwerk erlangt hat, könnte IP-Adressen oder Identitätsmerkmale des \"2-Faktor-Authentifizierungsdienstes\" fälschen, um gefälschte Log-Daten an das \"SIEM-System\" zu senden\n\nCAPEC-93 -- Log-injection-tampering\n\nT1036 - Masquerading --Der Angreifer maskiert seine bösartigen Daten als legitimen Datenverkehr einer vertrauenswürdigen Quelle.\n\nDREA-Score: 30",
-                  "mitigation": "Gegenmaßnahme: Mikrosegementierung\nUmsetzung: Nur die IPs der Auth-Server dürfen den SIEM-Port erreichen.\nD3FEND D3-MBN (Microsegmentation)",
+                  "description": "Ein Angreifer, der Zugriff auf das interne Netzwerk erlangt hat, könnte IP-Adressen oder Identitätsmerkmale des \"2-Faktor-Authentifizierungsdienstes\" fälschen, um gefälschte Log-Daten an das \"SIEM-System\" zu senden\n\nCAPEC-93 -- Log-injection-tampering\n\nT1036 - Masquerading --Der Angreifer maskiert seine bösartigen Daten als legitimen Datenverkehr einer vertrauenswürdigen Quelle.\nDREA-Score: D: 6 / R: 8 / E: 6 / A: 10=30",
+                  "mitigation": "Gegenmaßnahme: Mikrosegementierung\nUmsetzung: Nur die IPs der Auth-Server dürfen den SIEM-Port erreichen.\nD3FEND D3-MBN (Microsegmentation)\n2 + 2 + 2 + 2",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 103,
@@ -4063,20 +4063,13 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 6,
+                "spoofing": 8,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -4209,8 +4202,8 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Manipulation",
-                  "description": "Ein Angreifer mit administrativen Rechten oder durch eine SQL-Injection-Lücke im SIEM-System verändert oder löscht Einträge in der \"SIEM DB\"\n\nCAPEC-66 SQL Injection - Mangelnde Eingabevalidierung\n\nT1070 Indicator Removal -- Löschen von Logs oder Artefakten, um Aktivitäten zu verschleiern (Defense Evasion).\n\nDREA-Score: 25",
-                  "mitigation": "Gegenmaßnahmen: Prepared Statements\nUmsetzung: Refactoring aller Datenbank-Abfragen im SIEM-Interface auf Prepared Statements\nD3FEND D3-SPQ (SQL Parameter Query Structure)",
+                  "description": "Ein Angreifer mit administrativen Rechten oder durch eine SQL-Injection-Lücke im SIEM-System verändert oder löscht Einträge in der \"SIEM DB\"\n\nCAPEC-66 SQL Injection - Mangelnde Eingabevalidierung\n\nT1070 Indicator Removal -- Löschen von Logs oder Artefakten, um Aktivitäten zu verschleiern (Defense Evasion).\n\nDREA-Score: D: 9 / R: 3 / E: 3 / A: 10=25",
+                  "mitigation": "Gegenmaßnahmen: Prepared Statements\nUmsetzung: Refactoring aller Datenbank-Abfragen im SIEM-Interface auf Prepared Statements\nD3FEND D3-SPQ (SQL Parameter Query Structure)\n9 + 1 + 1 + 10",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 104,
@@ -4218,7 +4211,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 7,
+                "tampering": 9,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
