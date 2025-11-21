@@ -3595,13 +3595,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Trust Boundary"
+              ""
             ],
             "id": "d88ee570-c089-4316-853b-c50de9da31da",
             "source": {
@@ -3635,13 +3635,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Firma Allsecure",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Trust Boundary"
+              "Firma Allsecure"
             ],
             "id": "5443cf16-12ed-4786-a36b-43d3ce0d2656",
             "source": {
@@ -4049,7 +4049,7 @@
               "threats": [
                 {
                   "id": "ac9ccd60-3cdc-4441-8dfc-dde7f435b347",
-                  "title": "Spoofing um gefälschte Daten zu schicken",
+                  "title": "Spoofing um gefälschte Log-Files zu schicken",
                   "status": "Mitigated",
                   "severity": "Low",
                   "type": "Spoofing",
@@ -4062,7 +4062,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 9,
+                "spoofing": 11,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -4330,30 +4330,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 480,
-              "y": 390
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Firma Allsecure"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "id": "ac490207-bf5a-4e1e-8c45-bfbb2bc490dd",
-            "zIndex": 16,
-            "data": {
-              "type": "tm.Text",
-              "name": "Firma Allsecure",
-              "hasOpenThreats": false
             }
           }
         ]
