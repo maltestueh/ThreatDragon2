@@ -4344,8 +4344,8 @@
         "cells": [
           {
             "position": {
-              "x": 1350,
-              "y": 20.000000000000313
+              "x": 1524,
+              "y": 65
             },
             "size": {
               "width": 380,
@@ -4358,11 +4358,37 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "a33a6c64-5b89-450c-a051-ddfdc4b39a4f",
             "zIndex": -1,
+            "id": "a33a6c64-5b89-450c-a051-ddfdc4b39a4f",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TELCO",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1020,
+              "y": 510
+            },
+            "size": {
+              "width": 380,
+              "height": 200
+            },
+            "attrs": {
+              "label": {
+                "text": "Telefonanbieter"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "aca7520f-5454-4368-b187-234673e9d432",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Telefonanbieter",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -5210,7 +5236,12 @@
               "cell": "2eccba86-7f3a-4fe9-a9ab-1a1acc476798",
               "port": "cf7f928b-1033-429b-88d4-85e911e5dda6"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1080,
+                "y": 130
+              }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -5287,8 +5318,8 @@
                 "y": 360
               },
               {
-                "x": 650,
-                "y": 470
+                "x": 670,
+                "y": 570
               }
             ]
           },
@@ -5338,8 +5369,8 @@
             },
             "vertices": [
               {
-                "x": 1530,
-                "y": 240
+                "x": 1710,
+                "y": 280
               }
             ]
           },
@@ -5435,109 +5466,8 @@
             },
             "vertices": [
               {
-                "x": 1030,
-                "y": 260
-              }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Antwort",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "c7de3f33-3b5e-4364-bb2a-7625a1ea69a8",
-            "source": {
-              "cell": "075564c5-5eac-4ab7-954e-299ef6a8f9eb",
-              "port": "1b074248-ca1f-4936-8dfa-1e9d9dc5fcaa"
-            },
-            "target": {
-              "cell": "16b1b8b2-ada3-42b2-aff1-217433f7f008",
-              "port": "d238a3b8-c6f4-4efa-b2c2-cb97b9ddf7c2"
-            },
-            "vertices": [
-              {
-                "x": 990,
-                "y": 340
+                "x": 1210,
+                "y": 275
               }
             ]
           },
@@ -5585,7 +5515,12 @@
               "cell": "80272010-55cc-49b3-8b25-2e8fa3f4ba92",
               "port": "fcbfbbe3-db8f-42e0-b34b-dd33febf8893"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1240,
+                "y": 680
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -5634,10 +5569,6 @@
             "vertices": [
               {
                 "x": 870,
-                "y": 350
-              },
-              {
-                "x": 920,
                 "y": 350
               }
             ]
@@ -5739,8 +5670,59 @@
             },
             "vertices": [
               {
-                "x": 1530,
-                "y": 330
+                "x": 1710,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Antwort",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Antwort"
+            ],
+            "id": "60e80d5c-8650-4a73-a833-a6e9e92c35ea",
+            "source": {
+              "cell": "075564c5-5eac-4ab7-954e-299ef6a8f9eb",
+              "port": "1b074248-ca1f-4936-8dfa-1e9d9dc5fcaa"
+            },
+            "target": {
+              "cell": "16b1b8b2-ada3-42b2-aff1-217433f7f008",
+              "port": "d238a3b8-c6f4-4efa-b2c2-cb97b9ddf7c2"
+            },
+            "vertices": [
+              {
+                "x": 1200,
+                "y": 350
               }
             ]
           },
@@ -5870,8 +5852,8 @@
           },
           {
             "position": {
-              "x": 640,
-              "y": 300
+              "x": 660,
+              "y": 350
             },
             "size": {
               "width": 130,
@@ -6008,6 +5990,13 @@
                 "denialOfService": 9,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -6298,8 +6287,8 @@
           },
           {
             "position": {
-              "x": 1208,
-              "y": 20
+              "x": 1270,
+              "y": 50
             },
             "size": {
               "width": 112.5,
@@ -6415,8 +6404,8 @@
           },
           {
             "position": {
-              "x": 1344,
-              "y": 230
+              "x": 1524,
+              "y": 270
             },
             "size": {
               "width": 120,
@@ -6434,6 +6423,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -6517,7 +6507,6 @@
               ]
             },
             "id": "075564c5-5eac-4ab7-954e-299ef6a8f9eb",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Telefonnummer\nAPI-Gateway",
@@ -6535,8 +6524,8 @@
           },
           {
             "position": {
-              "x": 1577,
-              "y": 240
+              "x": 1757,
+              "y": 280
             },
             "size": {
               "width": 110,
@@ -6554,6 +6543,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -6637,7 +6627,6 @@
               ]
             },
             "id": "465804f8-473b-4f90-be65-19db3c54df97",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "Telefon-Routing\nInterface",
@@ -6655,8 +6644,8 @@
           },
           {
             "position": {
-              "x": 1474,
-              "y": 40
+              "x": 1654,
+              "y": 80
             },
             "size": {
               "width": 120,
@@ -6677,6 +6666,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -6760,7 +6750,6 @@
               ]
             },
             "id": "324afae8-e6f8-4c97-adc8-e6ca71b8e1e8",
-            "zIndex": 18,
             "data": {
               "type": "tm.Store",
               "name": "Routing-Information\nDB",
@@ -6779,8 +6768,8 @@
           },
           {
             "position": {
-              "x": 1130,
-              "y": 370
+              "x": 1070,
+              "y": 570.0000000000005
             },
             "size": {
               "width": 100,
@@ -6798,6 +6787,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 19,
             "ports": {
               "groups": {
                 "top": {
@@ -6881,7 +6871,6 @@
               ]
             },
             "id": "80272010-55cc-49b3-8b25-2e8fa3f4ba92",
-            "zIndex": 19,
             "data": {
               "type": "tm.Process",
               "name": "Kundentelefon\nanbieter",
@@ -6899,8 +6888,8 @@
           },
           {
             "position": {
-              "x": 1280,
-              "y": 395
+              "x": 1250,
+              "y": 595.0000000000005
             },
             "size": {
               "width": 120,
@@ -6921,6 +6910,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 21,
             "ports": {
               "groups": {
                 "top": {
@@ -7004,7 +6994,6 @@
               ]
             },
             "id": "f0b151df-a951-4611-9a3c-1d1c08bb320f",
-            "zIndex": 21,
             "data": {
               "type": "tm.Store",
               "name": "Telefonnumern-DB",
