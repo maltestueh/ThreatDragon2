@@ -5552,7 +5552,26 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "bdbd044f-fd2a-4d4a-ae92-8d398a141d88",
+                  "title": "Man-in-the-middle",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Der OTT könnte bei unzureichend gesicherter Transportverschlüsselung abgefangen werden, z. B. durch Man-in-the-Middle-Attacken.\n\nCAPEC-94: Adversary in the Middle\n\nTA0006 - Credential Acess -- Man-in-the-Middle, Durchgriff auf Sitzungstokens\n\nDREA-Score: D: 9 / R: 4 / E: 4 / A: 5=22",
+                  "mitigation": "Gegenmaßnahme: SSL/TLS Certificate\nUmsetzung: Hinterlegen der Server-Zertifikats im Code der Mobile App, Implementierung einer strikten HTTPS-Konfiguration auf dem Server.\nOWASP MASVS-NETWORK-2\n9 + 1 + 1 + 1 = 12",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 109,
+                  "score": "12"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Telefonnummer,OTT"
@@ -5574,11 +5593,6 @@
             ],
             "tools": {
               "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -7024,7 +7038,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 14,
-    "threatTop": 108
+    "threatTop": 109
   },
   "version": "2.5.0"
 }
