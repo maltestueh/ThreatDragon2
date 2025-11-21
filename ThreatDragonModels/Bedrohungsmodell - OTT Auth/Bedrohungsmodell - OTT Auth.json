@@ -5986,27 +5986,13 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "b2beeb18-b6fe-41d2-9eb1-cf2b9e10667c",
-                  "title": "Überlasten durch AUth-Anfragne",
-                  "status": "Mitigated",
-                  "severity": "Low",
-                  "type": "Denial of service",
-                  "description": "Ein Angreifer überlastet den OTT-Service mit massenhaften Auth-Anfragen, wodurch keine gültigen OTTs generiert oder versendet werden können.\n\nCAPEC-125: Flooding\n\nT1498 - Network Denial of Service\n\nDREA-Score: D: 8 / R: 10 / E: 9 / A: 10=37",
-                  "mitigation": "Gegenmaßnahme: Rate Limiting und Traffic Throttling\nUmsetzung: Load Balancer, Einsatz von CAPTCHAs nach fehlgeschlagenen Versuchen, automatische temporäre Sperrung von IPs bei Überschreitung der Limits\nD3FEND D3-RL (Rate Limiting)\n4 + 2 + 3 + 2",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 107,
-                  "score": "11"
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 9,
+                "denialOfService": 8,
                 "elevationOfPrivilege": 0
               }
             }
@@ -6531,7 +6517,29 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "5e5a508b-b600-477f-a350-0a897f9a92a3",
+                  "title": "Überlasten durch massive Anfragen",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Ein Angreifer überlastet den Service mit massenhaften Anfragen, wodurch der Process stoppt\n\nCAPEC-125: Flooding\n\nT1498 - Network Denial of Service\n\nDREA-Score: D: 8 / R: 10 / E: 9 / A: 10=37",
+                  "mitigation": "Gegenmaßnahme: Rate Limiting und Traffic Throttling\nUmsetzung: Load Balancer, Einsatz von CAPTCHAs nach fehlgeschlagenen Versuchen, automatische temporäre Sperrung von IPs bei Überschreitung der Limits\nD3FEND D3-RL (Rate Limiting)\n4 + 2 + 3 + 2",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 110,
+                  "score": "11"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -7028,7 +7036,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 14,
-    "threatTop": 109
+    "threatTop": 110
   },
   "version": "2.5.0"
 }
