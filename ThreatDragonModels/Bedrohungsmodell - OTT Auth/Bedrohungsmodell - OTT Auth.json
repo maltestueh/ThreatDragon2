@@ -2800,8 +2800,8 @@
                 "text": "Login System\nWebapp +\nMobile App"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -2898,7 +2898,7 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -2907,10 +2907,10 @@
                 {
                   "id": "92a620c3-306b-4de7-b311-470a15bbafdb",
                   "title": "Login Schwachstelle",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Erhöhung von Rechten",
-                  "description": "Das Login-System ist das primäre Einfallstor von außen. Eine Schwachstelle im Code der Webanwendung oder der API ermöglicht es einem Angreifer, Befehle auf dem Betriebssystemebene auszuführen\n\nCAPEC-253: Remote Code Execution\n\nT1190: Exploit Public-Facing Application – Ausnutzen einer Schwachstelle in einem internetseitig erreichbaren Dienst als Einstiegsvektor\n\nDREA-Score: D: 10 / R: 6 / E: 6 / A: 10= 32",
+                  "description": "Das Login-System ist das primäre Einfallstor von außen. Eine Schwachstelle im Code der Webanwendung oder der API ermöglicht es einem Angreifer, Befehle auf dem Betriebssystemebene auszuführen\n\nCAPEC-88: OS Command Injection\n\nT1190: Exploit Public-Facing Application – Ausnutzen einer Schwachstelle in einem internetseitig erreichbaren Dienst als Einstiegsvektor\n\nDREA-Score: D: 10 / R: 6 / E: 6 / A: 10= 32",
                   "mitigation": "Ggmaßnahme: Strikte Eingabevalidierung und sichere Deserialisierung\nUmsetzung: -- Einsatz einer \"Allowlist\"-Validierung für alle API-Endpunkte (nur erwartete Zeichen/Formate zulassen)\n-- SAST (Static Application Security Testing) in der CI/CD-Pipeline\n\nOWASP ASVS V1.2 Injection Prevention\n\n10 + 2 + 2 + 10",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2942,8 +2942,8 @@
                 "text": "2-Faktor-Aut\nhentifizierungs\ndienst"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -3040,7 +3040,7 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -3049,7 +3049,7 @@
                 {
                   "id": "82c16634-e518-4ef0-908e-80195213fe46",
                   "title": "Nicht ausreichende Protokollierung",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Nichtanerkennung",
                   "description": "Ein Benutzer oder Angreifer behauptet, eine bestimmte OTT-Anfrage stamme nicht von ihm. Ohne ausreichende Protokollierung kann Allsecure dies nicht nachweisen.\n\nCAPEC-93: Log Injection-Tampering-Forging\nTA0004 – Privilege Escalation -- Abstreiten oft mit Eskalation von Log-Rechten verbunden\n\nDREA-Score: D: 5 / R: 10 / E: 10 / A: 10=35",
@@ -3222,8 +3222,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -3244,7 +3243,7 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": false,
@@ -3253,7 +3252,7 @@
                 {
                   "id": "12e16001-5aca-495d-8c10-948726c5fb1d",
                   "title": "Man-in-the-Middle",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Veröffentlichung von Informationen",
                   "description": "Der OTT könnte bei unzureichend gesicherter Transportverschlüsselung abgefangen werden, z. B. durch Man-in-the-Middle-Attacken.\n\nCAPEC-94: Adversary in the Middle\n\nTA0006 - Credential Acess -- Man-in-the-Middle, Durchgriff auf Sitzungstokens\n\nDREA-Score: D: 9 / R: 4 / E: 4 / A: 5=22",
@@ -3288,7 +3287,7 @@
                 "y": 270
               },
               {
-                "x": 830,
+                "x": 860,
                 "y": 270
               }
             ]
@@ -3802,8 +3801,8 @@
                 "text": "Allsecure Mobile\nPhone OTT\nService"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -3900,7 +3899,7 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -3909,7 +3908,7 @@
                 {
                   "id": "b2beeb18-b6fe-41d2-9eb1-cf2b9e10667c",
                   "title": "Überlasten durch AUth-Anfragne",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Denial of service",
                   "description": "Ein Angreifer überlastet den OTT-Service mit massenhaften Auth-Anfragen, wodurch keine gültigen OTTs generiert oder versendet werden können.\n\nCAPEC-125: Flooding\n\nT1498 - Network Denial of Service\n\nDREA-Score: D: 8 / R: 10 / E: 9 / A: 10=37",
@@ -3925,7 +3924,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 8,
+                "denialOfService": 9,
                 "elevationOfPrivilege": 0
               }
             }
@@ -3944,8 +3943,8 @@
                 "text": "SIEM-System"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -4042,7 +4041,7 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -4051,11 +4050,11 @@
                 {
                   "id": "ac9ccd60-3cdc-4441-8dfc-dde7f435b347",
                   "title": "Spoofing um gefälschte Daten zu schicken",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Spoofing",
                   "description": "Ein Angreifer, der Zugriff auf das interne Netzwerk erlangt hat, könnte IP-Adressen oder Identitätsmerkmale des \"2-Faktor-Authentifizierungsdienstes\" fälschen, um gefälschte Log-Daten an das \"SIEM-System\" zu senden\n\nCAPEC-93 -- Log-injection-tampering\n\nT1036 - Masquerading --Der Angreifer maskiert seine bösartigen Daten als legitimen Datenverkehr einer vertrauenswürdigen Quelle.\nDREA-Score: D: 6 / R: 8 / E: 6 / A: 10=30",
-                  "mitigation": "Gegenmaßnahme: Mikrosegementierung\nUmsetzung: Nur die IPs der Auth-Server dürfen den SIEM-Port erreichen.\nD3FEND D3-MBN (Microsegmentation)\n2 + 2 + 2 + 2",
+                  "mitigation": "Gegenmaßnahme: Mikrosegementierung\nUmsetzung: Nur die der Auth-Server darf den SIEM-Port erreichen.\nD3FEND D3-MBN (Microsegmentation)\n2 + 2 + 2 + 2",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 103,
@@ -4063,7 +4062,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 8,
+                "spoofing": 9,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -4086,13 +4085,11 @@
                 "text": "SIEM DB"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -4189,7 +4186,7 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isALog": true,
               "isEncrypted": true,
               "isSigned": true,
@@ -4199,7 +4196,7 @@
                 {
                   "id": "747980c5-01d7-43f7-87ae-a1a216aefa9b",
                   "title": "Einträge manipulieren",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Manipulation",
                   "description": "Ein Angreifer mit administrativen Rechten oder durch eine SQL-Injection-Lücke im SIEM-System verändert oder löscht Einträge in der \"SIEM DB\"\n\nCAPEC-66 SQL Injection - Mangelnde Eingabevalidierung\n\nT1070 Indicator Removal -- Löschen von Logs oder Artefakten, um Aktivitäten zu verschleiern (Defense Evasion).\n\nDREA-Score: D: 9 / R: 3 / E: 3 / A: 10=25",
@@ -4333,6 +4330,30 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 480,
+              "y": 390
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Firma Allsecure"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "ac490207-bf5a-4e1e-8c45-bfbb2bc490dd",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Text",
+              "name": "Firma Allsecure",
+              "hasOpenThreats": false
             }
           }
         ]
